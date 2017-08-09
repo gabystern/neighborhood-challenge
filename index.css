@@ -1,0 +1,25 @@
+.highlight {
+    background: yellow;
+}
+
+ul#borough {
+    column-count: 3;
+    column-gap: 4px;
+}
+
+#highlightBoroughs {
+  text-align: center;
+}
+
+.HManhattan,
+.HBrooklyn,
+.HQueens,
+.HBronx,
+.HStatenIsland,
+.HNewJersey,
+.HLongIsland {
+  width: 10rem;
+  height: 4rem;
+  line-height: 4rem;
+  display: inline-block;
+}
