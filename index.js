@@ -10,7 +10,6 @@ function listBoroughs(){
   $.ajax({
       url: "locationsResponse.json",
       success: function(response) {
-        console.log(response.data)
         let list="";
         let weightedArray = response.data.sort(function(a, b) {
             return a.weight - b.weight;
@@ -89,7 +88,6 @@ function listOnlyBoroughs(){
   $.ajax({
     url: "locationsResponse.json",
     success: function(response){
-      console.log(response.data)
       let list="";
       let weightedArray = response.data.sort(function(a, b) {
           return a.weight - b.weight;
