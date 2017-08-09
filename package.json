@@ -1,0 +1,22 @@
+{
+  "name": "neighborhood-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabystern/neighborhood-challenge.git"
+  },
+  "author": "gabystern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabystern/neighborhood-challenge/issues"
+  },
+  "homepage": "https://github.com/gabystern/neighborhood-challenge#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
