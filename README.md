@@ -1,4 +1,4 @@
-## neighborhood-challenge
+## Neighborhood Viewer
 A JavaScript application that lets view all of the macro-neighborhoods and sub-neighborhoods of the NYC boroughs. Clicking a sub-neighborhood will highlight the borough that the neighborhood is located in.
 
 To install the application and run it in your local environment:
