@@ -32,12 +32,10 @@ function listMacros(){
         let weightedArray = response.data[i].mappings.sort(function(a, b) {
             return a.weight - b.weight;
         });
-      
-        console.log(weightedArray)
-        for (var j=0; j<response.data[i].mappings.length; j++){
-          if (response.data[i].mappings.length > 1){
-            macroClass = response.data[i].mappings[j].macro.name.split(' ').join('')
-            macroList += `<li class=${macroClass}>`+response.data[i].mappings[j].macro.name+"</li>"
+        if (weightedArray.length > 1){
+          for (var j=0; j<weightedArray.length; j++){
+            macroClass = weightedArray[j].macro.name.split(' ').join('')
+            macroList += `<li class=${macroClass}>`+weightedArray[j].macro.name+"</li>"
           }
         }
         $( `.${boroughClass}` ).append(`<ul>${macroList}</ul>`)
@@ -61,7 +59,6 @@ function listNeighborhoods(){
           let macroClass = response.data[i].mappings[j].macro.name.split(' ').join('')
           $( `.${macroClass}` ).append(`<ul>${neighbList}</ul>`)
         }
-      // document.getElementsByClassName(response.data[i].borough.name)[0].append("<ul>"+neighbList+"</ul>")
       }
     }
   })
